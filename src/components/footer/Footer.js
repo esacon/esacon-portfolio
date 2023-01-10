@@ -8,14 +8,10 @@ const Footer = () => {
           <span>Made with ❤️ by <b>Enrique Niebles</b>.</span>
           <div>
             <ul className="social" style={{ alignItems: "right" }}>
-              <li> <a href="https://github.com/esacon" target="_blank" rel="noreferrer"><Github /></a>
-              </li>
-              <li> <a href="https://www.linkedin.com/in/esaconn/" target="_blank" rel="noreferrer"><Linkedin /></a>
-              </li>
-              <li> <a href="https://www.instagram.com/shinkai1/" target="_blank" rel="noreferrer" ><Instagram /></a>
-              </li>
-              <li> <a href="https://twitter.com/esaconn" target="_blank" rel="noreferrer"><Twitter /></a>
-              </li>
+              <li key='github'> <a href="https://github.com/esacon" target="_blank" rel="noreferrer"><Github /></a></li>
+              <li key='linkedin'> <a href="https://www.linkedin.com/in/esaconn/" target="_blank" rel="noreferrer"><Linkedin /></a></li>
+              <li key='instagram'> <a href="https://www.instagram.com/shinkai1/" target="_blank" rel="noreferrer" ><Instagram /></a></li>
+              <li key='twitter'> <a href="https://twitter.com/esaconn" target="_blank" rel="noreferrer"><Twitter /></a></li>
             </ul>
           </div>
         </div>

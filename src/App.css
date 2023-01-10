@@ -3,18 +3,21 @@
   font-family: Centra;
   src: url("./assets/fonts/CentraNo2-Bold.ttf");
   font-weight: 700;
+  font-display: block;
 }
 
 @font-face {
   font-family: Centra;
   src: url("./assets/fonts/CentraNo2-Medium.ttf");
   font-weight: 500;
+  font-display: block;
 }
 
 @font-face {
   font-family: Centra;
   src: url("./assets/fonts/CentraNo2-Book.ttf");
   font-weight: 400;
+  font-display: block;
 }
 
 /************ Default Css ************/
@@ -246,22 +249,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner button {
   color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
 }
 
 .banner button svg {
-  font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
 
 .banner button:hover svg {
+  color: #b8b8b8;
   margin-bottom: 15px;
 }
 
@@ -288,32 +285,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-bx {
-  background: #171717;
-  border-radius: 64px;
-  padding: 60px 0px;
+  background-color: #121212;
+  border-radius: 48px;
+  padding: 40px 0px;
 }
 
 .skill h2 {
   color: #fff;
-  font-size: 45px;
+  font-size: 36px;
   font-weight: 700;
   text-align: center;
+  padding-bottom: 40px;
 }
 
-.skill td {
+.skill-container {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.skill-container img{
+  height: 26px;
+  width: 26px;
+}
+
+.skill-container p{
+  display: flex;
+  align-items: center;
   color: #f1f1f1;
-  font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
-}
-
-.skill span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
+  width: 96%;
+  text-align: left;
+  padding: 0 0 8px 7px;
 }
 
 /**
@@ -583,13 +589,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+.white-bg {
+  border-radius: 20%;
+  background: #fff;
+}
+
 @media (max-height: 670px) {
   .banner h1 {
     font-size: 36px;
   }
 }
 @media (max-height: 740px) {
-  img {
+  .banner img {
     display: none;
   }
 }
@@ -607,7 +618,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .banner p {
     order: 4;
+    font-size: 16px;
+  }
+  .skill h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .skill-container p {
     font-size: 17px;
+  }
+  .skill-container img {
+    width: 20px;
+    height: 20px;
   }
   .banner .circle {
     width: 160px;

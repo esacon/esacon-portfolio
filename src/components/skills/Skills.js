@@ -1,38 +1,20 @@
-import { Table, Row, Col } from 'react-bootstrap';
-import { Linkedin } from 'react-bootstrap-icons';
+import skills from './list';
 
 const Skills = () => {
-
-    const skills = [
-        { name: 'HTML', image: <Linkedin /> },
-        { name: 'CSS', image: <Linkedin /> },
-        { name: 'JavaScript', image: <Linkedin /> },
-        { name: 'React', image: <Linkedin /> },
-        { name: 'Node.js', image: <Linkedin /> },
-        { name: 'HTML', image: <Linkedin /> },
-        { name: 'CSS', image: <Linkedin /> },
-        { name: 'JavaScript', image: <Linkedin /> },
-        { name: 'React', image: <Linkedin /> },
-        { name: 'Node.js', image: <Linkedin /> },
-    ];
-
-    //<td><img src={skill.image} alt={skill.name} /></td>
-
     return (
         <section className="skill" id="skills">
             <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="skill-bx wow zoomIn">
-                            <h2>Skills</h2>
-                            <Table striped bordered hover>
-                                <tbody>
-                                    {skills.map((skill, index) => {
-                                        return console.log(index, skill.name);
-                                    })}
-                                </tbody>
-                            </Table>
-                        </div>
+                <div className="skill-bx wow zoomIn">
+                    <h2>Languages and Technologies</h2>
+                    <div className="center-container row">
+                        {skills.map((skill) => {
+                            return (
+                                <div className="skill-container col-md-3 col-sm-6 d-flex space-x-2" key={skill.name}>
+                                    <img src={skill.img} alt={skill.name} className={skill.name === 'Flask' ? 'white-bg' : ''}/>
+                                    <p>{skill.name}</p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>

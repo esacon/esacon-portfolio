@@ -1,6 +1,5 @@
 import { Table, Row, Col } from 'react-bootstrap';
 import { Linkedin } from 'react-bootstrap-icons';
-import { useState, useEffect } from 'react';
 
 const Skills = () => {
 

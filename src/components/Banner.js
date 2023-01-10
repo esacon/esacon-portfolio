@@ -61,7 +61,7 @@ const Banner = () => {
     return (
         <section className="banner" id="home">
             <Container>
-                <Row className="aligh-items-center">
+                <Row className="center-container">
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             <div>
@@ -77,19 +77,19 @@ const Banner = () => {
                             <li><a href="https://twitter.com/esaconn" target="_blank" rel="noreferrer"><Twitter /></a></li>
                         </ul>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col className="center-container" xs={12} md={6} xl={5}>
                         <TrackVisibility>
-                            <div>
+                            <div className="circle">
                                 <img src={profile} alt="Enrique Niebles" />
                             </div>
                         </TrackVisibility>
                     </Col>
+                    <div className="scroll-button">
+                        <a href="#skills">
+                            <button style={{ display: isVisible ? 'block' : 'none' }}><ArrowDownCircle size='40px' /></button>
+                        </a>
+                    </div>
                 </Row>
-                <div className="scroll-button">
-                    <a href="#skills">
-                        <button style={{ display: isVisible ? 'block' : 'none' }}><ArrowDownCircle size='40px' /></button>
-                    </a>
-                </div>
             </Container>
         </section>
     )

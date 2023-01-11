@@ -266,12 +266,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button:hover svg {
-  color: #b8b8b8;
+  color: #c7c6c6;
   margin-bottom: 15px;
 }
 
 .txt-rotate > .wrap {
-  border-right: 0.08em solid #b8b8b8;
+  border-right: 0.08em solid #c7c6c6;
 }
 
 .scroll-button {
@@ -384,7 +384,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .nav-tabs .nav-link.active {
-  border-bottom: solid 6px #b8b8b8 !important;
+  border-bottom: solid 6px #c7c6c6 !important;
 }
 
 .resume .tab-content {
@@ -407,7 +407,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 .resume .download-cv button:hover {
-  background-color: #b8b8b8;
+  background-color: #c7c6c6;
   color: #121212;
 }
 .resume .download-cv span {
@@ -441,7 +441,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 0;
 }
 .experience-company p {
-  color: #b8b8b8;
+  color: #c7c6c6;
   margin-bottom: 10px;
 }
 .experience-information,
@@ -470,7 +470,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: right;
 }
 .education-company p{
-  color: #b8b8b8;
+  color: #c7c6c6;
 }
 .education-information p {
   font-weight: 600;
@@ -532,10 +532,23 @@ hr.rounded {
   letter-spacing: 0.8px;
 }
 .email-button:hover {
-  background-color: #b8b8b8;
+  background-color: #c7c6c6;
   color: #f1f1f1;
-  opacity: 0.8;
+  opacity: 0.7;
 }
+
+.carousel {
+  padding-bottom: 40px;
+}
+
+.carousel .carousel-item {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+
 
 .social {
   padding: 0;
@@ -557,7 +570,7 @@ hr.rounded {
 }
 
 .social li a:hover {
-  color: #b8b8b8;
+  color: #c7c6c6;
 }
 
 .footer {
@@ -578,7 +591,7 @@ hr.rounded {
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #b8b8b8;
+  color: #c7c6c6;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
@@ -676,7 +689,7 @@ hr.rounded {
     font-size: 16px;
   }
   .nav-tabs .nav-link.active {
-    border-bottom: solid 4px #b8b8b8 !important;
+    border-bottom: solid 4px #c7c6c6 !important;
   }
   .resume .download-cv {
     justify-content: space-evenly;

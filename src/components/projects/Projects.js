@@ -15,31 +15,10 @@ const Projects = () => {
             <div className="container">
                 <div className="resume-bx wow zoomIn">
                     <h2>Projects</h2>
-                    <Carousel className="carousel slide" activeIndex={index} onSelect={handleSelect}>
-                        <Carousel.Item interval={time}>
+                    <Carousel activeIndex={index} onSelect={handleSelect}>
+                        <Carousel.Item>
                             <div className="center-container">
-                                <div className="experience-container">
-                                    <div className="experience-information">
-                                        <p>Academic tutor for Communication systems subject</p>
-                                        <div className="date">
-                                            <p>Jul 2021 - Nov 2021</p>
-                                        </div>
-                                    </div>
-                                    <div className="experience-company">
-                                        <p>Resource Center for Student Success (CREE), Universidad del Norte. Barranquilla, Colombia.</p>
-                                    </div>
-                                    <ul className="achievements-list">
-                                        <li>Provided academic supervision to students, demonstrating strong mentorship and teaching abilities.</li>
-                                        <li>Utilized Python and Matlab for advanced analysis of stochastic processes, showcasing technical expertise in data analysis and programming.</li>
-                                        <li>Demonstrated a thorough understanding of AM and FM modulations, frequency and time analysis of signals, and passband and digital communications.</li>
-                                        <li>Developed a telegram bot for capturing and decoding NOAA-15 audio signals in real time, highlighting skills in software development and problem-solving.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item interval={time}>
-                            <div className="center-container">
-                                <div className="experience-container">
+                                <div className="project-container">
                                     <div className="experience-information">
                                         <p>Academic tutor for Communication systems subject</p>
                                         <div className="date">

@@ -5,14 +5,19 @@ import Banner from './components/home/Banner';
 import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
 import Resume from './components/resume/Resume';
+import Contact from './components/contact/Contact';
+import Projects from './components/projects/Projects';
+
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Banner />
-      <Skills />
       <Resume />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer /> 
     </div>
   );

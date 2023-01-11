@@ -84,7 +84,7 @@ const Banner = () => {
                         </div>
                     </Col>
                     <div className="scroll-button">
-                        <a href="#skills">
+                        <a href="#resume">
                             <button style={{ display: isVisible ? 'block' : 'none' }}><ArrowDownCircle size='40px' /></button>
                         </a>
                     </div>

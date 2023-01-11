@@ -13,7 +13,7 @@ const Resume = () => {
             setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
         }, 10000);
         return () => clearInterval(intervalId);
-    }, [])
+    }, []);
 
     return (
         <section className="resume" id="resume">
@@ -21,8 +21,8 @@ const Resume = () => {
                 <div className="resume-bx wow zoomIn">
                     <h2>About me</h2>
                     <div className="quote-container">
-                        <p class="quote-text">"{quote.text}"</p>
-                        <p class="quote-author">- {quote.author}</p>
+                        <p className="quote-text">"{quote.text}"</p>
+                        <p className="quote-author">- {quote.author}</p>
                     </div>
                     <Tabs
                         id="resume-tabs"
@@ -42,14 +42,14 @@ const Resume = () => {
                                 <div className="experience-company">
                                     <p>Resource Center for Student Success (CREE), Universidad del Norte. Barranquilla, Colombia.</p>
                                 </div>
-                                <ul className="achivements-list">
+                                <ul className="achievements-list">
                                     <li>Provided academic supervision to students, demonstrating strong mentorship and teaching abilities.</li>
                                     <li>Expertise in combinatorial analysis, algorithms of graph theory, recurrence relations, recursive function design, and ordinary and exponential generating functions, with experience in applying these concepts to solve complex problems.</li>
                                     <li>Proficient in Python, Matlab, and Visual Basic, with the ability to use these tools to solve problems and design efficient solutions.</li>
                                     <li>Experienced in using LaTeX for creating professional presentations and informs.</li>
                                 </ul>
                             </div>
-                            <hr class="rounded"></hr>
+                            <hr className="rounded"></hr>
                             <div className="experience-container">
                                 <div className="experience-information">
                                     <p>Vice-chair of the Vehicular Technology Society chapter</p>
@@ -60,14 +60,14 @@ const Resume = () => {
                                 <div className="experience-company">
                                     <p>IEEE Student branch Universidad del Norte. Barranquilla, Colombia.</p>
                                 </div>
-                                <ul className="achivements-list">
+                                <ul className="achievements-list">
                                     <li>Led social media efforts and managed communication channels for the chapter or affinity group, fostering strong relationships with members and participants.</li>
                                     <li>Co-organized national events for the IEEE Branch Uninorte, demonstrating strong project management and leadership skills.</li>
                                     <li>Developed strong communication skills through frequent interactions with members and participants of the activities.</li>
                                     <li>Collaborated effectively with a team on various projects.</li>
                                 </ul>
                             </div>
-                            <hr class="rounded"></hr>
+                            <hr className="rounded"></hr>
                             <div className="experience-container">
                                 <div className="experience-information">
                                     <p>Academic tutor for Communication systems subject</p>
@@ -78,7 +78,7 @@ const Resume = () => {
                                 <div className="experience-company">
                                     <p>Resource Center for Student Success (CREE), Universidad del Norte. Barranquilla, Colombia.</p>
                                 </div>
-                                <ul className="achivements-list">
+                                <ul className="achievements-list">
                                     <li>Provided academic supervision to students, demonstrating strong mentorship and teaching abilities.</li>
                                     <li>Utilized Python and Matlab for advanced analysis of stochastic processes, showcasing technical expertise in data analysis and programming.</li>
                                     <li>Demonstrated a thorough understanding of AM and FM modulations, frequency and time analysis of signals, and passband and digital communications.</li>
@@ -98,7 +98,7 @@ const Resume = () => {
                                     <p>Technische Universität Ilmenau. Ilmenau, Germany.</p>
                                 </div>
                             </div>         
-                            <hr class="rounded"></hr>
+                            <hr className="rounded"></hr>
                             <div className="experience-container">
                                 <div className="education-information">
                                     <p>Computer Science and Systems Engineering</p>
@@ -110,7 +110,7 @@ const Resume = () => {
                                     <p>Universidad del Norte. Barranquilla, Colombia.</p>
                                 </div>
                             </div>  
-                            <hr class="rounded"></hr>
+                            <hr className="rounded"></hr>
                             <div className="experience-container">
                                 <div className="education-information">
                                     <p>Electronic Engineering</p>
@@ -122,7 +122,7 @@ const Resume = () => {
                                     <p>Universidad del Norte. Barranquilla, Colombia.</p>
                                 </div>
                             </div>  
-                            <hr class="rounded"></hr>
+                            <hr className="rounded"></hr>
                             <div className="experience-container">
                                 <div className="education-information">
                                     <p>Data Scientist</p>
@@ -134,7 +134,7 @@ const Resume = () => {
                                     <p>Correlation One</p>
                                 </div>
                             </div>    
-                            <hr class="rounded"></hr>
+                            <hr className="rounded"></hr>
                             <div className="experience-container">
                                 <div className="education-information">
                                     <p>Programming skills training program</p>
@@ -147,15 +147,15 @@ const Resume = () => {
                                 </div>
                             </div>      
                         </Tab>
-                        <Tab className="tab-content" eventKey="achivements" title="Achivements">
+                        <Tab className="tab-content" eventKey="achievements" title="Achievements">
                             <div>
-                                <ul className="achivements-list">
+                                <ul className="achievements-list">
                                     <li>Scholarship for education and training in Germany KOSPIE 22/23. German Academic Exchange Service (DAAD), Germany.</li>
                                     <li>Graduated with honors, 2022. Data Science 4 All. Correlation One.</li>
                                     <li>Electrical engineering dean's list, 2022-I. Universidad del Norte, Colombia.</li>
                                     <li>Huawei Technologies Seeds for the Future Program 3rd place, 2021. Huawei Technologies.</li>
                                     <li>Seeds for the Future Program scholarship recipient, 2021. Huawei Technologies.</li>
-                                    <li>Electrical Engineering 2020-II dean's list. Universidad del Norte, Colombia.</li>
+                                    <li>Electrical Engineering dean's list, 2020-II. Universidad del Norte, Colombia.</li>
                                     <li>Sakura Science Exchange Program scholarship recipient, 2017. Japan Science and Technology Agency.</li>
                                     <li>Ser Pilo Paga 4 Scholarship, 2017. ICETEX, Colombia.</li>
                                     <li>Academic Excellence Award, 2017. IDDI Nueva Granada, Colombia.</li>
@@ -166,7 +166,7 @@ const Resume = () => {
                     <div className="container">
                         <div className="download-cv">
                             <a href="../../assets/files/curriculum_enrique_niebles.pdf" download>
-                                <button style={{ 'margin-right': '20px' }}>
+                                <button style={{ 'marginRight': '20px' }}>
                                     <div className="center-container">
                                         <File1 size='25px' color="#f1f1f1" />
                                         <span>Curriculum</span>

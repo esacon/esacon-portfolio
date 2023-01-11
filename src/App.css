@@ -424,6 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .quote-text {
+  width: fit-content;
   margin: 10px 0 0 0;
   font-size: 20px;
   text-align: center;
@@ -469,7 +470,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   text-align: right;
 }
-.education-company p{
+.education-company p {
   color: #c7c6c6;
 }
 .education-information p {
@@ -538,17 +539,103 @@ hr.rounded {
 }
 
 .carousel {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.carousel-inner {
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
-.carousel .carousel-item {
-  color: red;
+.carousel-item,
+.carousel-item.active {
+  width: 100% !important;
+  height: 100% !important;
+  flex-direction: column !important;
+  padding: 0px 32px !important;
+}
+
+.carousel-control-prev {
+  justify-content: left !important;
+  width: fit-content !important;
+}
+
+.carousel-control-next {
+  justify-content: right !important;
+  width: fit-content !important;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.item-fade {
+  animation: fade-in 1.5s;
+}
+
+.project-container {
+  position: relative;
+  padding: 30px 0px;
+  height: fit-content;
+}
+
+.projects h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.projects .project-title p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.projects li,
+.projects p {
+  color: #f1f1f1;
   font-size: 18px;
-  font-weight: 500;
+  letter-spacing: 0.8px;
   line-height: 1.5em;
+  width: 96%;
 }
 
+.projects .project-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.projects .project-container .project-description .row {
+  display: flex;
+  align-items: center;
+}
+
+.projects .project-description .text ul {
+  text-align: justify;
+}
+
+.projects .project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .project-img img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-width: 250px;
+}
 
 .social {
   padding: 0;
@@ -655,6 +742,10 @@ hr.rounded {
     font-weight: 600;
   }
   .resume h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .projects h2 {
     font-size: 28px;
     font-weight: 600;
   }

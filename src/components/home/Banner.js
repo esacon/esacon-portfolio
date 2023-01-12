@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowDownCircle, Linkedin, Instagram, Github, Twitter } from 'react-bootstrap-icons';
 
-import profile from '../../assets/imgs/profile-picture.png';
+import profile from '../../assets/imgs/profile-picture2.webp';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -36,7 +36,7 @@ const Banner = () => {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             colorIndex !== colors.length - 1 ? setColorIndex(colorIndex + 1) : setColorIndex(0);
-            setDelta(200);
+            setDelta(100);
         }
     }
 

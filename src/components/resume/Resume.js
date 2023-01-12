@@ -43,12 +43,6 @@ const Resume = () => {
                                 </div>
                                 <div className="experience-company">
                                     <p>Resource Center for Student Success (CREE), Universidad del Norte. Barranquilla, Colombia.</p>
-                                    <ul className="achievements-list">
-                                        <li>Provided academic supervision to students, demonstrating strong mentorship and teaching abilities.</li>
-                                        <li>Expertise in combinatorial analysis, algorithms of graph theory, recurrence relations, recursive function design, and ordinary and exponential generating functions, with experience in applying these concepts to solve complex problems.</li>
-                                        <li>Proficient in Python, Matlab, and Visual Basic, with the ability to use these tools to solve problems and design efficient solutions.</li>
-                                        <li>Experienced in using LaTeX for creating professional presentations and informs.</li>
-                                    </ul>
                                 </div>
                             </div>
                             <hr className="rounded"></hr>
@@ -61,12 +55,6 @@ const Resume = () => {
                                 </div>
                                 <div className="experience-company">
                                     <p>IEEE Student branch Universidad del Norte. Barranquilla, Colombia.</p>
-                                    <ul className="achievements-list">
-                                        <li>Led social media efforts and managed communication channels for the chapter or affinity group, fostering strong relationships with members and participants.</li>
-                                        <li>Co-organized national events for the IEEE Branch Uninorte, demonstrating strong project management and leadership skills.</li>
-                                        <li>Developed strong communication skills through frequent interactions with members and participants of the activities.</li>
-                                        <li>Collaborated effectively with a team on various projects.</li>
-                                    </ul>
                                 </div>
                             </div>
                             <hr className="rounded"></hr>
@@ -79,12 +67,6 @@ const Resume = () => {
                                 </div>
                                 <div className="experience-company">
                                     <p>Resource Center for Student Success (CREE), Universidad del Norte. Barranquilla, Colombia.</p>
-                                    <ul className="achievements-list">
-                                        <li>Provided academic supervision to students, demonstrating strong mentorship and teaching abilities.</li>
-                                        <li>Utilized Python and Matlab for advanced analysis of stochastic processes, showcasing technical expertise in data analysis and programming.</li>
-                                        <li>Demonstrated a thorough understanding of AM and FM modulations, frequency and time analysis of signals, and passband and digital communications.</li>
-                                        <li>Developed a telegram bot for capturing and decoding NOAA-15 audio signals in real time, highlighting skills in software development and problem-solving.</li>
-                                    </ul>
                                 </div>
                             </div>
                         </Tab>
@@ -154,10 +136,10 @@ const Resume = () => {
                                 <ul className="achievements-list">
                                     <li>Scholarship for education and training in Germany KOSPIE 22/23. German Academic Exchange Service (DAAD), Germany.</li>
                                     <li>Graduated with honors, 2022. Data Science 4 All. Correlation One.</li>
-                                    <li>Electrical engineering dean's list, 2022-I. Universidad del Norte, Colombia.</li>
+                                    <li>Electronic engineering dean's list, 2022-I. Universidad del Norte, Colombia.</li>
                                     <li>Huawei Technologies Seeds for the Future Program 3rd place, 2021. Huawei Technologies.</li>
                                     <li>Seeds for the Future Program scholarship recipient, 2021. Huawei Technologies.</li>
-                                    <li>Electrical Engineering dean's list, 2020-II. Universidad del Norte, Colombia.</li>
+                                    <li>Electronic Engineering dean's list, 2020-II. Universidad del Norte, Colombia.</li>
                                     <li>Sakura Science Exchange Program scholarship recipient, 2017. Japan Science and Technology Agency.</li>
                                     <li>Ser Pilo Paga 4 Scholarship, 2017. ICETEX, Colombia.</li>
                                     <li>Academic Excellence Award, 2017. IDDI Nueva Granada, Colombia.</li>

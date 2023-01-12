@@ -69,16 +69,6 @@ const Projects = () => {
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                        <p><b>Characteristics:</b></p>
-                                                        <ul className="achievements-list">
-                                                            <li>Real-time tracking of taxi vehicles using GPS location of the phone.</li>
-                                                            <li>Measurement of car speed.</li>
-                                                            <li>Viewing the history of car movements on a web page.</li>
-                                                            <li>Comparison of up to 3 cars at the same time.</li>
-                                                            <li>Secure login for authorized access to the tracking data.</li>
-                                                            <li>Admin panel for managing cars, drivers and clients.</li>
-                                                            <li>Cloud-based infrastructure for high availability and scalability.</li>
-                                                        </ul>
                                                     </div>
                                                     <div className="center-container">
                                                         <div className="download-cv">
@@ -155,16 +145,6 @@ const Projects = () => {
                                                                     </div>
                                                                 </li>
                                                             </ul>
-                                                            <p><b>Characteristics:</b></p>
-                                                            <ul className="achievements-list">
-                                                                <li>Wearable device consisting of a mask with an omnidirectional electret microphone.</li>
-                                                                <li>Digital filtering stage to obtain respiratory rate.</li>
-                                                                <li>Connection to a smartphone using a 3.5mm jack cable.</li>
-                                                                <li>Mobile app for recording and storing audio samples in .WAV format.</li>
-                                                                <li>Web page for displaying a graphic summary of the audio signal and the user's status.</li>
-                                                                <li>Accuracy of at least 80% in measuring respiratory rate.</li>
-                                                                <li>Fast and easily accessible solution for accurate measurement of respiratory rate in people with COPD.</li>
-                                                            </ul>
                                                         </div>
                                                     </Col>
                                                     <Col lg={4} md={12}>
@@ -172,30 +152,6 @@ const Projects = () => {
                                                             <img src={project2} alt="Lung-app project." />
                                                         </div>
                                                     </Col>
-                                                    <div className="center-container">
-                                                        <div className="download-cv">
-                                                            <div className="link-button">
-                                                                <a href="https://github.com/esacon/pf-lungapp-backend" rel="noreferrer" target="_blank">
-                                                                    <button>
-                                                                        <div className="center-container">
-                                                                            <Github size='25px' color="#f1f1f1" />
-                                                                            <span>Backend</span>
-                                                                        </div>
-                                                                    </button>
-                                                                </a>
-                                                            </div>
-                                                            <div className="link-button">
-                                                                <a href="https://github.com/esacon/pf-lungapp-frontend" rel="noreferrer" target="_blank">
-                                                                    <button>
-                                                                        <div className="center-container">
-                                                                            <Github size='25px' color="#f1f1f1" />
-                                                                            <span>Frontend</span>
-                                                                        </div>
-                                                                    </button>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </Row>
                                             </div>
                                         </div>
@@ -225,15 +181,6 @@ const Projects = () => {
                                                                     <p>Python.</p>
                                                                 </div>
                                                             </li>
-                                                        </ul>
-                                                        <p><b>Characteristics:</b></p>
-                                                        <ul className="achievements-list">
-                                                            <li>Support for CBZ and CBR file formats.</li>
-                                                            <li>Automatic page detection and ordering.</li>
-                                                            <li>Customizable output settings such as page size and orientation.</li>
-                                                            <li>Easy to use command-line interface.</li>
-                                                            <li>Fast and efficient conversion process.</li>
-                                                            <li>Support for batch conversion of multiple files at once.</li>
                                                         </ul>
                                                     </div>
                                                     <div className="center-container">
@@ -281,12 +228,6 @@ const Projects = () => {
                                                             </li>
                                                             <li>OpenCV library for image processing and computer vision.</li>
                                                         </ul>
-                                                        <p><b>Characteristics:</b></p>
-                                                        <ul className="achievements-list">
-                                                            <li>Real-time license plate detection from webcam video feed.</li>
-                                                            <li>Recognition of Colombian license plate numbers.</li>
-                                                            <li>Option to save and export data.</li>
-                                                        </ul>
                                                     </div>
                                                     <div className="center-container">
                                                         <div className="download-cv">
@@ -332,12 +273,6 @@ const Projects = () => {
                                                                 </div>
                                                             </li>
                                                             <li>Authentication and authorization using JSON Web Tokens (JWT).</li>
-                                                        </ul>
-                                                        <p><b>Characteristics:</b></p>
-                                                        <ul className="achievements-list">
-                                                            <li>User authentication and authorization.</li>
-                                                            <li>Option to set access permissions and schedules.</li>
-                                                            <li>Admin panel for managing users, devices and spaces.</li>
                                                         </ul>
                                                     </div>
                                                     <div className="center-container">

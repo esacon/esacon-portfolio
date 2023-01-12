@@ -67,7 +67,9 @@ const Banner = () => {
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>Hey! I'm Enrique Niebles</h1>
                             <span className="jobs txt-rotate" style={{ color: colors[colorIndex] }} data-rotate={jobText.toString()}><span className="wrap">{text}</span></span>
-                            <p align='justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p align='justify'>
+                                Hola, mi llave 👋! I'm from Colombia 🇨🇴, where the coffee is strong, the music is lively and the people are friendly. I love to travel and discover new places, cultures and cuisines. Uhmm... I may not be a wizard, but my code can make magic happen 😎.
+                            </p>
                         </div>
                         <div>
                             <ul className="social">
@@ -81,8 +83,8 @@ const Banner = () => {
                     <Col className="center-container" xs={12} md={6} xl={5}>
                         <div className="img-container">
                             <div className="circle">
-                            <img src={profile} alt="Enrique Niebles" />
-                        </div>
+                                <img src={profile} alt="Enrique Niebles" />
+                            </div>
                         </div>
                     </Col>
                     <div className="scroll-button">

@@ -232,11 +232,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 8px;
   display: inline-block;
 }
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: fit-content;
 }
 
 .banner h1 {
@@ -296,6 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   justify-items: start;
+  width: fit-content !important;
 }
 .grid-no div {
   text-align: left;
@@ -323,10 +331,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 
+.skill .container {
+  display: flex;
+  justify-content: center;
+}
 .skill-bx {
   background-color: #121212;
   border-radius: 48px;
-  padding: 40px 0px;
+  padding: 40px 40px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill h2 {
@@ -447,6 +462,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-decoration: none;
 }
 .quote-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -454,7 +471,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .quote-text {
-  width: fit-content;
+  font-style: italic;
+}
+.quote-text p {
   margin: 10px 0 0 0;
   font-size: 20px;
   text-align: center;
@@ -611,7 +630,7 @@ hr.rounded {
 
 .project-container {
   position: relative;
-  padding: 30px 0px;
+  padding: 30px 20px;
   height: fit-content;
 }
 
@@ -636,6 +655,7 @@ hr.rounded {
   line-height: 1.5em;
   width: 96%;
 }
+
 
 .projects .project-description {
   display: flex;
@@ -744,7 +764,7 @@ hr.rounded {
 
 /* Small screens */
 @media (max-height: 760px)  {
-  .banner img {
+  .banner .img-container {
     display: none;
   }
 }
@@ -785,6 +805,9 @@ hr.rounded {
     font-size: 28px;
     font-weight: 600;
   }
+  .skill-bx {
+    padding: 20px 0;
+  }
   .skill-container p {
     font-size: 17px;
   }
@@ -802,10 +825,9 @@ hr.rounded {
     overflow: hidden;
   }
   .banner .circle img {
-    order: -2;
     position: relative;
     margin: 0 auto;
-    top: 10px;
+    top: 20px;
     right: 10px;
     transform: scale(1.3);
   }

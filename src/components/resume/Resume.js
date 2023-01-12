@@ -167,7 +167,7 @@ const Resume = () => {
                     </Tabs>
                     <div className="container">
                         <div className="download-cv">
-                            <a href="../../assets/files/curriculum_enrique_niebles.pdf" download>
+                            <a href="https://drive.google.com/file/d/1Z2IZHY5g2bHEwRLMPRUvh0G6pyuS_zrd/" rel="noreferrer" target="_blank" download="Curriculum.pdf">
                                 <button style={{ 'marginRight': '20px' }}>
                                     <div className="center-container">
                                         <File1 size='25px' color="#f1f1f1" />
@@ -175,7 +175,7 @@ const Resume = () => {
                                     </div>
                                 </button>
                             </a>
-                            <a href="../../assets/files/lebenslauf_enrique_niebles.pdf" download>
+                            <a href="https://drive.google.com/file/d/1ZWHAULEcGp8fdb9Vyx6NuTvFNUMTkEA5" rel="noreferrer" target="_blank" download="Lebenslauf.pdf">
                                 <button>
                                     <div className="center-container">
                                         <File2 size='25px' color="#f1f1f1" />

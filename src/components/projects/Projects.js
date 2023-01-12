@@ -32,68 +32,68 @@ const Projects = () => {
                                         <div className="project-description">
                                             <div className="center-container">
                                                 <Row>
-                                                        <div className="text">
-                                                            <p align='justify'>
-                                                                A real-time tracking app for taxi companies that utilizes ELM-327 sensors to measure the rpms of their vehicles, and GPS location of the phone that was sending to the company. The app also features a web page that allows users to view the history of the car's movements within a specific period and compare up to 3 cars at the same time.
-                                                            </p>
-                                                            <p><b>Technologies:</b></p>
-                                                            <ul className="achievements-list">
-                                                                <li>
-                                                                    <div className="tech-icon">
-                                                                        <img alt="ReactJS" src={technologies.reactjs}></img>
-                                                                        <p>ReactJS for front-end development.</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div className="tech-icon">
-                                                                        <img alt="NodeJS" src={technologies.nodejs}></img>
-                                                                        <p>NodeJS and Express for back-end development.</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div className="tech-icon">
-                                                                        <img alt="MySQL" src={technologies.mysql}></img>
-                                                                        <p>MySQL for database management.</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div className="tech-icon">
-                                                                        <img alt="Kotlin" src={technologies.kotlin}></img>
-                                                                        <p>Kotlin for Android app development.</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div className="tech-icon">
-                                                                        <img alt="AWS" src={technologies.aws}></img>
-                                                                        <p>AWS for cloud services.</p>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                            <p><b>Characteristics:</b></p>
-                                                            <ul className="achievements-list">
-                                                                <li>Real-time tracking of taxi vehicles using GPS location of the phone.</li>
-                                                                <li>Measurement of car speed.</li>
-                                                                <li>Viewing the history of car movements on a web page.</li>
-                                                                <li>Comparison of up to 3 cars at the same time.</li>
-                                                                <li>Secure login for authorized access to the tracking data.</li>
-                                                                <li>Admin panel for managing cars, drivers and clients.</li>
-                                                                <li>Cloud-based infrastructure for high availability and scalability.</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="center-container">
-                                                            <div className="download-cv">
-                                                                <div className="link-button">
-                                                                    <a href="https://github.com/esacon/TaxiTracker" rel="noreferrer" target="_blank">
-                                                                        <button>
-                                                                            <div className="center-container">
-                                                                                <Github size='25px' color="#f1f1f1" />
-                                                                                <span>Full project</span>
-                                                                            </div>
-                                                                        </button>
-                                                                    </a>
+                                                    <div className="text">
+                                                        <p align='justify'>
+                                                            A real-time tracking app for taxi companies that utilizes ELM-327 sensors to measure the rpms of their vehicles, and GPS location of the phone that was sending to the company. The app also features a web page that allows users to view the history of the car's movements within a specific period and compare up to 3 cars at the same time.
+                                                        </p>
+                                                        <p><b>Technologies:</b></p>
+                                                        <ul className="achievements-list">
+                                                            <li>
+                                                                <div className="tech-icon">
+                                                                    <img alt="ReactJS" src={technologies.reactjs}></img>
+                                                                    <p>ReactJS for front-end development.</p>
                                                                 </div>
+                                                            </li>
+                                                            <li>
+                                                                <div className="tech-icon">
+                                                                    <img alt="NodeJS" src={technologies.nodejs}></img>
+                                                                    <p>NodeJS and Express for back-end development.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div className="tech-icon">
+                                                                    <img alt="MySQL" src={technologies.mysql}></img>
+                                                                    <p>MySQL for database management.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div className="tech-icon">
+                                                                    <img alt="Kotlin" src={technologies.kotlin}></img>
+                                                                    <p>Kotlin for Android app development.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div className="tech-icon">
+                                                                    <img alt="AWS" src={technologies.aws}></img>
+                                                                    <p>AWS for cloud services.</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <p><b>Characteristics:</b></p>
+                                                        <ul className="achievements-list">
+                                                            <li>Real-time tracking of taxi vehicles using GPS location of the phone.</li>
+                                                            <li>Measurement of car speed.</li>
+                                                            <li>Viewing the history of car movements on a web page.</li>
+                                                            <li>Comparison of up to 3 cars at the same time.</li>
+                                                            <li>Secure login for authorized access to the tracking data.</li>
+                                                            <li>Admin panel for managing cars, drivers and clients.</li>
+                                                            <li>Cloud-based infrastructure for high availability and scalability.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="center-container">
+                                                        <div className="download-cv">
+                                                            <div className="link-button">
+                                                                <a href="https://github.com/esacon/TaxiTracker" rel="noreferrer" target="_blank">
+                                                                    <button>
+                                                                        <div className="center-container">
+                                                                            <Github size='25px' color="#f1f1f1" />
+                                                                            <span>Full project</span>
+                                                                        </div>
+                                                                    </button>
+                                                                </a>
                                                             </div>
                                                         </div>
+                                                    </div>
                                                 </Row>
                                             </div>
                                         </div>

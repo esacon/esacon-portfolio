@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-complete">
         <div className="footer-add ">
-          <span>Made with ❤️ by <b>Enrique Niebles</b>.</span>
+          <a href="https://github.com/esacon/esacon-portfolio" rel="noreferrer" target="_blank">
+            <span>Made with ❤️ by <b>Enrique Niebles</b>.</span>
+          </a>
           <div>
             <ul className="social" style={{ alignItems: "right" }}>
               <li key='github'> <a href="https://github.com/esacon" target="_blank" rel="noreferrer"><Github /></a></li>

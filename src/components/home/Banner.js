@@ -9,7 +9,6 @@ const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
     const [colorIndex, setColorIndex] = useState(0);
     const jobText = ['Software Developer', 'Data Scientist', 'Backend-Developer', 'Electronic Engineer'];
     const colors = ['#0092cc', '#6ECCAF', '#FFE9B1', '#D23369'];
@@ -32,16 +31,12 @@ const Banner = () => {
 
         if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
-            setIndex(prevIndex => prevIndex - 1);
             setDelta(period);
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setIndex(1);
             colorIndex !== colors.length - 1 ? setColorIndex(colorIndex + 1) : setColorIndex(0);
             setDelta(200);
-        } else {
-            setIndex(prevIndex => prevIndex + 1);
         }
     }
 
@@ -68,7 +63,7 @@ const Banner = () => {
                             <h1>Hey! I'm Enrique Niebles</h1>
                             <span className="jobs txt-rotate" style={{ color: colors[colorIndex] }} data-rotate={jobText.toString()}><span className="wrap">{text}</span></span>
                             <p align='justify'>
-                                Hola, mi llave 👋! I'm from Colombia 🇨🇴, where the coffee is strong, the music is lively and the people are friendly. I love to travel and discover new places, cultures and cuisines. Uhmm... I may not be a wizard, but my code can make magic happen 😎.
+                                I'm from Colombia 🇨🇴, where the coffee is strong, the music is lively and the people are friendly. I love to travel and discover new places, cultures and cuisines. Uhmm... I may not be a wizard, but my code can make magic happen 😎.
                             </p>
                         </div>
                         <div>

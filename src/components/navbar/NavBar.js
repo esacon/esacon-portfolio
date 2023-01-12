@@ -7,15 +7,6 @@ const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => {
-            window.scrollY > 50 ? setScrolled(true) : setScrolled(false);
-            updateActiveLink();
-        };
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
-
     const thresholds = {
         home: 0.5,
         resume: 0.2,
@@ -42,6 +33,15 @@ const NavBar = () => {
         });
     }, 100);
 
+    useEffect(() => {
+        const onScroll = () => {
+            window.scrollY > 50 ? setScrolled(true) : setScrolled(false);
+            updateActiveLink();
+        };
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [updateActiveLink]);
+    
     return (
         <Router>
             <Navbar expand="md" className={scrolled ? "scrolled" : ""}>

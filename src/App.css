@@ -537,6 +537,24 @@ hr.rounded {
   margin-bottom: 20px;
 }
 
+.tech-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tech-icon p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tech-icon img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
 .projects {
   background: #121212;
   padding: 40px 0 120px 0;
@@ -663,7 +681,6 @@ hr.rounded {
   width: 96%;
 }
 
-
 .projects .project-description {
   display: flex;
   align-items: center;
@@ -690,8 +707,13 @@ hr.rounded {
 .projects .project-img img {
   width: 100%;
   height: 100%;
-  max-width: 250px;
-  max-width: 250px;
+  max-width: 500px;
+  max-width: 500px;
+}
+
+.projects .achievements-list p,
+.projects .achievements-list li {
+  text-align: left;
 }
 
 .social {
@@ -755,6 +777,21 @@ hr.rounded {
   width: 100%;
 }
 
+.footer-add span {
+  color: #f1f1f1;
+  font-weight: 410;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-add span:hover {
+  color: #c7c6c6;
+}
+
+.footer-add a {
+  text-decoration: none;
+}
+
 .white-bg {
   border-radius: 20%;
   background: #fff;
@@ -770,7 +807,7 @@ hr.rounded {
 }
 
 /* Small screens */
-@media (max-height: 760px)  {
+@media (max-height: 760px) {
   .banner .img-container {
     display: none;
   }

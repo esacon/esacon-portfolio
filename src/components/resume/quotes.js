@@ -19,7 +19,7 @@ const quotes = [
     {text: 'Dios sabe como hace las vainas.', author: 'Unknown'},
     {text: "Abran trocha que voy pa' lante.", author: 'Unknown'},
     {text: 'Camarón que se duerme se lo lleva la corriente.', author: 'Unknown'},
-    {text: 'Cogela suave que voy en bajada.', author: 'Unknown'},
+    {text: 'Cógela suave que voy en bajada.', author: 'Unknown'},
     {text: 'Cuando tú ibas, ya yo venía.', author: 'Unknown'},
     {text: 'El muerto se hace el pesado cuando tiene quien lo cargue.', author: 'Unknown'},
     {text: 'El que no llora no mama.', author: 'Unknown'},

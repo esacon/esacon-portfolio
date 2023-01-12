@@ -270,6 +270,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 15px;
 }
 
+.banner .img-container {
+  width: 60vw;
+  height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #c7c6c6;
 }
@@ -281,6 +289,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: fixed;
   bottom: 0;
   margin-bottom: 50px;
+}
+
+.grid-no {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+}
+.grid-no div {
+  text-align: left;
+  margin: 5px 0;
+  padding: 0 20px;
+}
+
+@media (max-width: 480px) {
+  /* make a grid of two columns without affecting the original size*/
+  .grid-no {
+    grid-template-columns: minmax(170px, 1fr) minmax(170px, 1fr);
+  }
+  .skill-bx h2 {
+    padding: 0 20px;
+    padding-bottom: 40px;
+  }
 }
 
 .skill {
@@ -308,26 +339,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-container {
   display: flex;
-  text-align: left;
-  justify-content: space-between;
-  margin-left: 20px;
-}
-
-.skill-container img {
-  height: 26px;
-  width: 26px;
+  align-items: center;
+  margin-right: 200px;
 }
 
 .skill-container p {
-  display: flex;
-  align-items: center;
   color: #f1f1f1;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
   text-align: left;
-  padding: 0 0 8px 7px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  padding: 5px 0px;
+}
+
+.skill-container img {
+  height: 26px;
+  width: 26px;
 }
 
 .resume {
@@ -711,24 +741,30 @@ hr.rounded {
     font-size: 28px;
   }
 }
-@media (max-height: 740px) {
+
+/* Small screens */
+@media (max-height: 760px)  {
   .banner img {
     display: none;
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 650px) {
   div {
     display: grid;
   }
   .banner h1 {
     font-size: 38px;
     position: relative;
+    text-align: justify;
+    width: 100%;
   }
   .banner .jobs {
     font-size: 28px;
     position: relative;
   }
   .banner p {
+    width: 100%;
     font-size: 16px;
   }
   .resume p {
@@ -760,8 +796,8 @@ hr.rounded {
     margin-top: 5px;
   }
   .banner .circle {
-    width: 160px;
-    height: 160px;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -769,9 +805,22 @@ hr.rounded {
     order: -2;
     position: relative;
     margin: 0 auto;
-    top: 20px;
+    top: 10px;
     right: 10px;
     transform: scale(1.3);
+  }
+  .banner .social {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .email-button {
+    margin-top: 15px;
+  }
+  .contact h3 {
+    text-align: left;
+  }
+  .contact h4 {
+    text-align: justify;
   }
   .resume .tabs {
     background-color: #121212;

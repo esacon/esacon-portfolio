@@ -79,8 +79,10 @@ const Banner = () => {
                         </div>
                     </Col>
                     <Col className="center-container" xs={12} md={6} xl={5}>
-                        <div className="circle">
+                        <div className="img-container">
+                            <div className="circle">
                             <img src={profile} alt="Enrique Niebles" />
+                        </div>
                         </div>
                     </Col>
                     <div className="scroll-button">

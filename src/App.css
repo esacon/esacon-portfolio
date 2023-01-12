@@ -435,14 +435,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .resume .tab-content {
   margin-top: 20px;
 }
-.resume .download-cv {
+.download-cv {
   display: flex;
   align-items: center;
   margin-top: 30px;
   margin-bottom: 40px;
   justify-content: right;
 }
-.resume .download-cv button {
+.download-cv button {
   background-color: transparent;
   border: 2px solid;
   border-color: #f1f1f1;
@@ -451,11 +451,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 16px;
   letter-spacing: 0.8px;
 }
-.resume .download-cv button:hover {
+.download-cv button:hover {
   background-color: #c7c6c6;
   color: #121212;
 }
-.resume .download-cv span {
+.download-cv span {
   margin-left: 5px;
   color: #f1f1f1;
   font-weight: 410;
@@ -546,14 +546,21 @@ hr.rounded {
   flex-direction: column;
   margin-bottom: 60px;
 }
-
+.projects .download-cv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.download-cv .link-button {
+  padding: 0% 20px;
+}
 .newsletter-bx {
   background: #f1f1f1;
   border-radius: 55px;
   color: #121212;
   padding: 50px;
   margin-bottom: 20px;
-  margin-top: -140px;
+  margin-top: -150px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -835,6 +842,10 @@ hr.rounded {
     margin-top: 10px;
     margin-bottom: 0px;
   }
+  .download-cv .link-button {
+    padding: 0;
+    scale: 0.8;
+  }
   .email-button {
     margin-top: 15px;
   }
@@ -853,10 +864,10 @@ hr.rounded {
   .nav-tabs .nav-link.active {
     border-bottom: solid 4px #c7c6c6 !important;
   }
-  .resume .download-cv {
+  .download-cv {
     justify-content: space-evenly;
   }
-  .resume .download-cv button {
+  .download-cv button {
     margin-right: 0px;
   }
   .footer-complete {

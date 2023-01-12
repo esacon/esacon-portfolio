@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
+import { Github } from "react-bootstrap-icons";
 import profile from '../../assets/imgs/profile-picture.png';
 
 const Projects = () => {
@@ -22,7 +23,7 @@ const Projects = () => {
                             <div className="center-container">
                                 <div className="project-container">
                                     <div className="project-title">
-                                        <p>Academic tutor for Communication systems subject</p>
+                                        <p>Taxi GPS Tracker</p>
                                     </div>
                                     <div className="project-information">
                                         <div className="project-description">
@@ -36,6 +37,30 @@ const Projects = () => {
                                                                 <li>Graduated with honors, 2022. Data Science 4 All. Correlation One.</li>
                                                                 <li>Electrical engineering dean's list, 2022-I. Universidad del Norte, Colombia.</li>
                                                             </ul>
+                                                        </div>
+                                                        <div className="center-container">
+                                                            <div className="download-cv">
+                                                                <div className="link-button">
+                                                                    <a href="../../assets/files/lebenslauf_enrique_niebles.pdf" download>
+                                                                        <button>
+                                                                            <div className="center-container">
+                                                                                <Github size='25px' color="#f1f1f1" />
+                                                                                <span>Backend</span>
+                                                                            </div>
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                                <div className="link-button">
+                                                                    <a href="../../assets/files/lebenslauf_enrique_niebles.pdf" download>
+                                                                        <button>
+                                                                            <div className="center-container">
+                                                                                <Github size='25px' color="#f1f1f1" />
+                                                                                <span>Frontend</span>
+                                                                            </div>
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </Col>
                                                     <Col lg={4} md={12}>
@@ -93,6 +118,9 @@ const Projects = () => {
                             </div>
                         </Carousel.Item>
                     </Carousel>
+                    <div className="center-container">
+                        <h5>More on the way...</h5>
+                    </div>
                 </div>
             </div>
         </section>

@@ -409,7 +409,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: justify;
 }
 .resume .achievements-list li {
-  padding-bottom: 5px;
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+.resume .achievements-list li p{
+  width: 100%;
+  padding: 0;
+  margin-bottom: 5px;
 }
 
 .resume .tabs {
@@ -468,17 +475,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   text-align: center;
   width: 100%;
+  height: 150px;
   overflow: hidden;
 }
 .quote-text {
   font-style: italic;
 }
 .quote-text p {
-  margin: 10px 0 0 0;
   font-size: 20px;
   text-align: center;
   font-style: italic;
   float: right;
+  height: 100%;
 }
 .quote-author {
   text-align: right;

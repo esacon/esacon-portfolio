@@ -12,7 +12,7 @@ const Banner = () => {
     const [colorIndex, setColorIndex] = useState(0);
     const jobText = ['Software Developer', 'Data Scientist', 'Backend-Developer', 'Electronic Engineer'];
     const colors = ['#0092cc', '#6ECCAF', '#FFE9B1', '#D23369'];
-    const period = 2000;
+    const period = 1000;
 
     const [isVisible, setIsVisible] = useState(true);
 
@@ -36,7 +36,7 @@ const Banner = () => {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             colorIndex !== colors.length - 1 ? setColorIndex(colorIndex + 1) : setColorIndex(0);
-            setDelta(100);
+            setDelta(50);
         }
     }
 

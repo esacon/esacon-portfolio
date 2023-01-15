@@ -1,4 +1,3 @@
-/************ Custom Font ************/
 @font-face {
   font-family: Centra;
   src: url("./assets/fonts/CentraNo2-Bold.ttf");
@@ -20,7 +19,6 @@
   font-display: block;
 }
 
-/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +92,6 @@ p.danger {
   color: red;
 }
 
-/************ Navbar Css ************/
 nav.navbar {
   padding: 22px 0;
   background-color: transparent;
@@ -131,6 +128,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 nav.navbar .navbar-collapse {
   justify-content: flex-start;
+}
+
+nav.navbar .navbar-toggler.collapsed {
+  background-color: #121212;
 }
 
 span.navbar-text {
@@ -214,7 +215,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .banner .tagline {
@@ -231,12 +234,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 42px;
   margin-bottom: 8px;
   display: inline-block;
-}
-.banner .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .center-container {
@@ -475,18 +472,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 150px;
+  height: 100px;
   overflow: hidden;
 }
 .quote-text {
+  display: flex;
+  align-self: center;
+  justify-content: center;
   font-style: italic;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 100% !important;
 }
 .quote-text p {
   font-size: 20px;
+  align-content: center;
   text-align: center;
   font-style: italic;
   float: right;
-  height: 100%;
 }
 .quote-author {
   text-align: right;

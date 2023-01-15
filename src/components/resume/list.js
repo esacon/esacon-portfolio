@@ -6,7 +6,7 @@ const resume = {
             date: "Jan 2021 - Jul 2022"
         },
         {
-            title: "Vice-chair of the _Vehicular Technology Society Chapter_",
+            title: "Vice-chair of the _Vehicular Technology Society_ chapter",
             company: "IEEE Student branch Universidad del Norte. Barranquilla, Colombia.",
             date: "Jan 2021 - Jan 2022"
         },

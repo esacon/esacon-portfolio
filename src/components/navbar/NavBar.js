@@ -6,6 +6,7 @@ import _ from "lodash";
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const thresholds = {
         home: 0.5,
@@ -44,8 +45,8 @@ const NavBar = () => {
     
     return (
         <Router>
-            <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-                <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <Navbar expand="md" className={scrolled || isOpen ? "scrolled" : ""}>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setIsOpen(!isOpen)}>
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">

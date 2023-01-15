@@ -35,9 +35,9 @@ const Projects = () => {
                                                             <p align='justify'>{project.desciption}</p>
                                                             <p><b>Technologies:</b></p>
                                                             <ul className="achievements-list">
-                                                                {project.techStack.map(item => {
+                                                                {project.techStack.map((item, index) => {
                                                                     return (
-                                                                        <li key={item.alt}>
+                                                                        <li key={index}>
                                                                             <div className="tech-icon" >
                                                                                 {item.src && <img className={item.alt === 'Flask' ? 'white-bg' : ''} alt={item.alt} src={item.src}></img>}
                                                                                 <p>{item.desc}</p>

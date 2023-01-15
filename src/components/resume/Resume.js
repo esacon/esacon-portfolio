@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Tab, Tabs } from "react-bootstrap";
+import { Tab, Tabs } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { FileEarmarkPdfFill as File1, Translate as File2 } from "react-bootstrap-icons";
@@ -24,12 +24,10 @@ const Resume = () => {
             <div className="container">
                 <div className="resume-bx wow zoomIn">
                     <h2>About me</h2>
-                    <Container>
-                        <div className="quote-container">
-                            <p className="quote-text">"{quote.text}"</p>
-                            <p className="quote-author">- {quote.author}</p>
-                        </div>
-                    </Container>
+                    <div className="quote-container">
+                        <p className="quote-text">"{quote.text}"</p>
+                        <p className="quote-author">- {quote.author}</p>
+                    </div>
                     <Tabs
                         id="resume-tabs"
                         activeKey={key}
@@ -44,7 +42,7 @@ const Resume = () => {
                                         return (
                                             <div key={index}>
                                                 <div className="experience-information">
-                                                    <p><ReactMarkdown children={experience.title} rehypePlugins={[rehypeRaw]}/></p>
+                                                    <ReactMarkdown children={experience.title} rehypePlugins={[rehypeRaw]} />
                                                     <div className="date">
                                                         <p>{experience.date}</p>
                                                     </div>
@@ -86,7 +84,7 @@ const Resume = () => {
                                 <ul className="achievements-list">
                                     {
                                         resume.achievements.map((achievement, index) => {
-                                            return <li key={index}><ReactMarkdown children={achievement} rehypePlugins={[rehypeRaw]}/></li>
+                                            return <li key={index}><ReactMarkdown children={achievement} rehypePlugins={[rehypeRaw]} /></li>
                                         })
                                     }
                                 </ul>
@@ -96,12 +94,16 @@ const Resume = () => {
                     <div className="container">
                         <div className="download-cv">
                             {
-                                resume.files.map(file => {
+                                resume.files.map((file, index) => {
                                     return (
                                         <a href={file.url} rel="noreferrer" target="_blank" download={file.name} key={file.text}>
                                             <button style={file.styles}>
                                                 <div className="center-container">
-                                                    <File1 size='25px' color="#f1f1f1" />
+                                                    {
+                                                        index === 0 ?
+                                                        <File1 size='25px' color="#f1f1f1" />
+                                                        : <File2 size='25px' color="#f1f1f1" />
+                                                    }
                                                     <span>{file.text}</span>
                                                 </div>
                                             </button>

@@ -1,6 +1,6 @@
-# 🖥️ Esacon Portfolio
+# 🖥️ Enrique Niebles Portfolio
 
-This is a portfolio website for Esacon, a web development and design company. The website showcases their work and services.
+This is a portfolio website for me, Enrique Niebles. The website showcases my work, skills, and background. It serves as an online resume, providing a glimpse of my experience and abilities to potential employers and clients.
 
 ## 🚀 Getting Started
 
@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository
 
-````
+```
 git clone https://github.com/esacon/esacon-portfolio.git
 ```
 
@@ -36,11 +36,6 @@ npm start
 * [React](https://reactjs.org/) - JavaScript library for building user interfaces.
 * [Bootstrap](https://getbootstrap.com/) - CSS framework.
 
-
-## 🛠️ Built With
-
-* [React](https://reactjs.org/) - JavaScript library for building user interfaces
-* [Bootstrap](https://getbootstrap.com/) - CSS framework
 
 ## ⚖️ License
 

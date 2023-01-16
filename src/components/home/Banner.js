@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowDownCircle, Linkedin, Instagram, Github, Twitter } from 'react-bootstrap-icons';
 
-import profile from '../../assets/imgs/profile-picture.png';
-import profile2 from '../../assets/imgs/profile-picture2.webp';
+import profile from '../../assets/imgs/profile-picture.webp';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);

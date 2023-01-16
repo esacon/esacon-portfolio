@@ -32,7 +32,7 @@ const NavBar = () => {
                     , "");
             setActiveLink(current);
         });
-    }, 100);
+    }, 200);
 
     useEffect(() => {
         const onScroll = () => {
@@ -42,7 +42,19 @@ const NavBar = () => {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, [updateActiveLink]);
-    
+
+    useEffect(() => {
+        const navLink = document.getElementById(`nav-${activeLink}`);
+        if (navLink) {
+            navLink.classList.add("active");
+        }
+        return () => {
+            if (navLink) {
+                navLink.classList.remove("active");
+            }
+        }
+    }, [activeLink]);
+
     return (
         <Router>
             <Navbar expand="md" className={scrolled || isOpen ? "scrolled" : ""}>
@@ -51,11 +63,11 @@ const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="m-auto navbar-link">
-                        <Nav.Link href="#home" className={activeLink === "home" ? "navbar-link active" : "navbar-link"}>Home</Nav.Link>
-                        <Nav.Link href="#resume" className={activeLink === "resume" ? "navbar-link active" : "navbar-link"}>Resume</Nav.Link>
-                        <Nav.Link href="#skills" className={activeLink === "skills" ? "navbar-link active" : "navbar-link"}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === "projects" ? "navbar-link active" : "navbar-link"}>Projects</Nav.Link>
-                        <Nav.Link href="#contact" className={activeLink === "contact" ? "navbar-link active" : "navbar-link"}>Contact</Nav.Link>
+                        <Nav.Link id="nav-home" href="#home" className='navbar-link'>Home</Nav.Link>
+                        <Nav.Link id="nav-resume" href="#resume" className='navbar-link'>Resume</Nav.Link>
+                        <Nav.Link id="nav-skills" href="#skills" className='navbar-link'>Skills</Nav.Link>
+                        <Nav.Link id="nav-projects" href="#projects" className='navbar-link'>Projects</Nav.Link>
+                        <Nav.Link id="nav-contact" href="#contact" className='navbar-link'>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

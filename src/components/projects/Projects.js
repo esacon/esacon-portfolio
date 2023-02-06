@@ -3,6 +3,9 @@ import { Carousel } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Github } from "react-bootstrap-icons";
 
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+
 import projects from './list.js';
 
 const Projects = () => {
@@ -32,7 +35,7 @@ const Projects = () => {
                                                 <Row>
                                                     <div className={project.img ? 'col-lg-8 col-md-12' : ''}>
                                                         <div className='text'>
-                                                            <p align='justify'>{project.desciption}</p>
+                                                            <ReactMarkdown children={project.description} rehypePlugins={[rehypeRaw]} />
                                                             <p><b>Technologies:</b></p>
                                                             <ul className="achievements-list">
                                                                 {project.techStack.map((item, index) => {
@@ -68,7 +71,7 @@ const Projects = () => {
                                                     </div>
                                                     {
                                                         project.img && (
-                                                            <div className='col-lg-4 col-md-12'>
+                                                            <div className='col'>
                                                                 <div className="project-img">
                                                                     <img src={project.img} alt="Lung-app project." />
                                                                 </div>

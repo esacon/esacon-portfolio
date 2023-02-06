@@ -550,14 +550,16 @@ hr.rounded {
 
 .tech-icon {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .tech-icon p {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-bottom: 0;
 }
 
 .tech-icon img {
@@ -690,6 +692,7 @@ hr.rounded {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  text-decoration: none;
 }
 
 .projects .project-description {
@@ -703,6 +706,13 @@ hr.rounded {
 .projects .project-container .project-description .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.project-description .text p {
+  text-align: justify;
+  text-decoration: none;
+  color: #fff;
 }
 
 .projects .project-description .text ul {
@@ -716,10 +726,8 @@ hr.rounded {
 }
 
 .projects .project-img img {
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
-  max-width: 500px;
+  max-width: 100%;
+  max-height: 550px;
 }
 
 .projects .achievements-list p,

@@ -12,7 +12,7 @@ const skills = [
         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
     },
     {
-        name: "Typescript",
+        name: "TypeScript",
         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
     },
     {
